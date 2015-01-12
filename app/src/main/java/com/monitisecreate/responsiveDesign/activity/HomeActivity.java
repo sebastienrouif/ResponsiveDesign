@@ -3,6 +3,7 @@ package com.monitisecreate.responsiveDesign.activity;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
@@ -38,6 +39,8 @@ public class HomeActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        //Toast.makeText(this, BuildConfig.TOAST_STRING + " " + BuildConfig.TOAST_BOOLEAN, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -94,12 +97,15 @@ public class HomeActivity extends Activity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id) {
+            case R.id.action_settings:
+                return true;
+            case R.id.action_master_detail:
+                Intent intent = new Intent(this, ItemListActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
-
-
 }

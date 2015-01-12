@@ -2,9 +2,9 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.monitisecreate.responsiveDesign.activity.HomeActivity">
     <item
-        android:id="@+id/action_example"
+        android:id="@+id/action_master_detail"
         android:showAsAction="withText|ifRoom"
-        android:title="@string/action_example"/>
+        android:title="@string/action_master_detail"/>
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

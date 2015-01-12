@@ -8,6 +8,13 @@
     <string name="title_section3">Section 3</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
+    <string name="action_master_detail">Master/Detail</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="home_fragment_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem diam, quis elementum eros luctus eget. Integer tincidunt mauris efficitur suscipit eleifend. Donec dignissim mauris vitae neque sollicitudin, non fringilla turpis posuere. Suspendisse at sagittis tellus. Nulla facilisi. Etiam fringilla ultrices felis sit amet posuere. Pellentesque efficitur non dolor nec aliquet. Pellentesque varius tempor mollis. Vestibulum ante sem, lacinia sit amet nunc eu, lacinia iaculis nisi. In lacinia odio id fringilla pulvinar. In mollis risus dui, et venenatis leo dignissim eleifend. Mauris in venenatis risus, nec efficitur justo.</string>
+    <string name="home_fragment_title">Mauris efficitur felis ac orci fringilla rhoncus.</string>
+    <string name="kyc_upload_document_2">your avatar</string>
+    <string name="change">Change</string>
+
 
 </resources>

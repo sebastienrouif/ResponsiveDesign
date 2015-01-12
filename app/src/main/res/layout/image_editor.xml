@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/kyc_uplaod_document_image"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/kyc_upload_document_2_header"
+            android:layout_width="@dimen/kyc_uplaod_document_image"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/kyc_upload_document_2"
+            android:textColor="@color/orange_600"/>
+
+        <Button
+            android:id="@+id/kyc_upload_document_2_button"
+            android:layout_width="@dimen/kyc_uplaod_document_image"
+            android:layout_height="@dimen/kyc_uplaod_document_image"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/kyc_upload_document_2_header"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/img_searchbox_orange"
+            android:drawableTop="@drawable/ic_kyc_camera"
+            android:textColor="@color/orange_600"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/kyc_upload_document_2_validation_image"
+            android:layout_width="@dimen/kyc_uplaod_document_image"
+            android:layout_height="@dimen/kyc_uplaod_document_image"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/kyc_upload_document_2_header"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_avatar_unknown"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/kyc_upload_document_2_validation_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/kyc_upload_document_2_validation_image"
+            android:layout_alignRight="@id/kyc_upload_document_2_validation_image"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_confirmation_yes"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/kyc_upload_document_2_validation_change"
+            android:layout_width="@dimen/kyc_uplaod_document_image"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/kyc_upload_document_2_validation_image"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="@string/change"
+            android:textColor="@color/orange_600"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</FrameLayout>

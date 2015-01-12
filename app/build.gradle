@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.3'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.squareup.picasso:picasso:2.4.0'
 }
 
 android {
@@ -56,10 +57,14 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            buildConfigField "String", "TOAST_STRING", "\"it's debug\""
+            buildConfigField "boolean", "TOAST_BOOLEAN", "true"
         }
 
         release {
             signingConfig signingConfigs.release
+            buildConfigField "String", "TOAST_STRING", "\"it's release\""
+            buildConfigField "boolean", "TOAST_BOOLEAN", "false"
 
             // Release builds add the Jenkins BUILD_NUMBER as a suffix to the version name
             // This is the preferred versioning scheme (i.e. 1.0.0.<BUILD_NUMBER>)

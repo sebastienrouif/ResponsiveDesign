@@ -22,6 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.monitisecreate.responsiveDesign.R;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer. See the <a
  * href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction"> design
@@ -247,7 +249,7 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == com.monitisecreate.responsiveDesign.R.id.action_example) {
+        if (item.getItemId() == R.id.action_master_detail) {
             Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
             return true;
         }
